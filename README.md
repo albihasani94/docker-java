@@ -18,3 +18,21 @@ docker run -d -p 8282:8080 --name docks airhacks/docks
 ```
 docker logs docks
 ```
+
+### Stop all Containers:
+
+```
+docker kill $(docker ps -q)
+```
+
+###Remove all Containers
+
+```
+docker rm $(docker ps -a -q)
+```
+
+###Remove all Docker Images
+
+```
+docker rmi $(docker images -q)
+```
