@@ -25,13 +25,13 @@ docker logs docks
 docker kill $(docker ps -q)
 ```
 
-###Remove all Containers
+### Remove all Containers
 
 ```
 docker rm $(docker ps -a -q)
 ```
 
-###Remove all Docker Images
+### Remove all Docker Images
 
 ```
 docker rmi $(docker images -q)
